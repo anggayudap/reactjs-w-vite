@@ -9,13 +9,15 @@ export default function HelloWorld() {
 }
 
 function HelloWorldHeader() {
+    const greeting: string = "Hello, World!";
     return (
-        <h1>Hello, World!</h1>
+        <h1>{greeting.toUpperCase()}</h1>
     )
 }
 
 function HelloWorldParagraph() {
+    const paragraph = "Welcome to my React application.";
     return (
-        <p>Welcome to my React application. Split function!</p>
+        <p>{paragraph.toLocaleLowerCase()}</p>
     )
 }
